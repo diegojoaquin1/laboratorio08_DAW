@@ -6,11 +6,11 @@ from .views import (
 )
 
 router = DefaultRouter()
-router.register(r'organizers', OrganizerViewSet)
-router.register(r'teams', TeamViewSet)
-router.register(r'players', PlayerViewSet)
-router.register(r'tournaments', TournamentViewSet)
-router.register(r'player-tournaments', PlayerTournamentViewSet)
+router.register(r'organizers', OrganizerViewSet, basename='organizer')
+router.register(r'teams', TeamViewSet, basename='team')
+router.register(r'players', PlayerViewSet, basename='player')
+router.register(r'tournaments', TournamentViewSet, basename='tournament')
+router.register(r'player-tournaments', PlayerTournamentViewSet, basename='player-tournament')
 
 urlpatterns = [
     path('', include(router.urls)),

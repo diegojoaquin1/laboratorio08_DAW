@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "mng-tournament-api-collection",
+		"name": "MNG Tournament API",
+		"description": "Collection for Laboratorio 08 - Django REST Framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Organizers",
+			"item": [
+				{
+					"name": "List Organizers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/organizers/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "organizers", ""]
+						}
+					}
+				},
+				{
+					"name": "Organizer Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/organizers/1/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "organizers", "1", ""]
+						}
+					}
+				},
+				{
+					"name": "Create Organizer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"organizationName\": \"Epic Games\",\n    \"email\": \"contact@epicgames.com\",\n    \"website\": \"https://epicgames.com\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/organizers/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "organizers", ""]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "List Teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/teams/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "teams", ""]
+						}
+					}
+				},
+				{
+					"name": "Team Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/teams/1/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "teams", "1", ""]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Players",
+			"item": [
+				{
+					"name": "List Players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/players/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "players", ""]
+						}
+					}
+				},
+				{
+					"name": "Player Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/players/1/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "players", "1", ""]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Tournaments",
+			"item": [
+				{
+					"name": "List Tournaments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tournaments/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "tournaments", ""]
+						}
+					}
+				},
+				{
+					"name": "Tournament Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tournaments/1/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "tournaments", "1", ""]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "PlayerTournaments",
+			"item": [
+				{
+					"name": "List Registrations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/player-tournaments/",
+							"protocol": "http",
+							"host": "http://127.0.0.1:8000/api/player-tournaments/",
+							"path": ["api", "player-tournaments", ""]
+						}
+					}
+				},
+				{
+					"name": "Registration Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/player-tournaments/1/",
+							"protocol": "http",
+							"host": ["127", "0", "0", "1"],
+							"port": "8000",
+							"path": ["api", "player-tournaments", "1", ""]
+						}
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [""]
+			}
+		},
+		{
+			"listen": "postresponse",
+			"script": {
+				"type": " পোস্টরেসপন্স",
+				"exec": [""]
+			}
+		}
+	]
+}
