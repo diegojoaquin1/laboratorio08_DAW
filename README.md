@@ -76,7 +76,7 @@ MyDjangoProject/
 ## 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/usuario/MNGTournament.git
+git clone https://github.com/diegojoaquin1/laboratorio08_DAW.git
 cd MNGTournament
 ```
 
